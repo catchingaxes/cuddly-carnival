@@ -14,4 +14,4 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g commitizen cz-conventional-changelog" 2>&1
 
 # install python packages
-RUN su vscode -c  "pip install chalice && pip install --upgrade awscli" 2>&1
+RUN su vscode -c  "pip install --upgrade chalice awscli" 2>&1
